@@ -1,0 +1,869 @@
+<!doctype html><html><head><meta charset="utf-8"><title>GTO Decision Report</title>
+<style>
+  body{background:#0a0a0a;color:#e5e5e5;font:14px/1.5 ui-monospace,Menlo,monospace;margin:0;padding:24px}
+  h1{font-size:18px;margin:0 0 4px}
+  .sub{color:#737373;margin-bottom:24px}
+  .hand{border:1px solid #262626;border-radius:8px;padding:16px;margin-bottom:20px}
+  .hand h2{font-size:14px;margin:0 0 12px;font-weight:600}
+  .dim{color:#737373}
+  .card{display:inline-block;border:1px solid #404040;border-radius:4px;background:#171717;padding:1px 5px;margin-right:2px;color:#e5e5e5}
+  .card.red{color:#f87171}
+  .decision{border:1px solid #262626;border-radius:6px;padding:10px;margin-bottom:8px}
+  .dhead{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:6px}
+  .street{text-transform:uppercase;font-size:11px;color:#737373;letter-spacing:.05em}
+  .did{color:#a3a3a3}
+  .verdict{margin-left:auto;border:1px solid;border-radius:4px;padding:1px 8px;font-weight:600;font-size:12px}
+  .conf{border:1px solid #404040;border-radius:4px;padding:1px 6px;font-size:10px;text-transform:uppercase;color:#9ca3af}
+  .rec{color:#38bdf8;margin:4px 0 8px;font-size:13px}
+  .arow{display:flex;align-items:center;gap:8px;padding:3px 6px;border-radius:4px}
+  .arow.chosen{background:#171717;box-shadow:inset 0 0 0 1px rgba(16,185,129,.4)}
+  .aname{width:120px;flex-shrink:0;color:#d4d4d4}
+  .bar{flex:1;height:8px;background:#262626;border-radius:4px;overflow:hidden}
+  .fill{display:block;height:100%;background:#0369a1}
+  .afreq{width:40px;text-align:right;color:#a3a3a3;font-size:12px}
+  .aev{width:110px;text-align:right;font-size:12px}
+  .aev.pos{color:#34d399}.aev.neg{color:#f87171}
+  .atags{width:60px;text-align:right}
+  .tag{font-size:10px;padding:0 4px;border-radius:3px}
+  .tag.you{color:#34d399}.tag.best{color:#38bdf8}
+  .dfoot{display:flex;justify-content:space-between;margin-top:6px;font-size:11px}
+  .loss{color:#fbbf24}
+</style></head><body>
+<h1>GTO Decision Report</h1>
+<div class="sub">12 hands · 1692 opponent profiles · CoinPoker_msl1010_2026-02-01_to_2026-05-29_Cash.txt</div>
+<section class="hand">
+    <h2>#5165010011 <span class="dim"><span class="card red">A♥</span><span class="card red">4♦</span> · 0.02bb game · SB 09be44a4 · BB <b>Hero</b> · UTG bf216960 · HJ 66df935b · CO c2ba4dbc · BTN af5aaf2f</span></h2>
+    <div class="decision">
+    <div class="dhead">
+      <span class="street">preflop</span>
+      <span class="cards"><span class="card red">A♥</span><span class="card red">4♦</span></span>
+      
+      <span class="did">you <b>call</b></span>
+      <span class="verdict" style="color:#f87171;border-color:#f87171">blunder</span>
+      <span class="conf">approximate (multiway)</span>
+    </div>
+    <div class="rec">▶ Recommended: Raise 2.5bb <span class="dim">(92%)</span></div>
+    <div class="rows"><div class="arow ">
+    <span class="aname">Fold</span>
+    <span class="bar"><span class="fill" style="width:2%"></span></span>
+    <span class="afreq">2%</span>
+    <span class="aev ">+0.00bb</span>
+    <span class="atags"></span>
+  </div><div class="arow chosen">
+    <span class="aname">Call</span>
+    <span class="bar"><span class="fill" style="width:5%"></span></span>
+    <span class="afreq">5%</span>
+    <span class="aev pos">+0.77bb<span class="dim"> ±0.02</span></span>
+    <span class="atags"><span class="tag you">you</span></span>
+  </div><div class="arow ">
+    <span class="aname">Raise 2.5bb</span>
+    <span class="bar"><span class="fill" style="width:92%"></span></span>
+    <span class="afreq">92%</span>
+    <span class="aev pos">+3.66bb<span class="dim"> ±0.03</span></span>
+    <span class="atags"><span class="tag best">best</span></span>
+  </div></div>
+    <div class="dfoot"><span class="dim">preflop from BB: EV from rollout vs 2-way modeled range(s).</span><span class="loss">−2.89bb vs best</span></div>
+  </div><div class="decision">
+    <div class="dhead">
+      <span class="street">flop</span>
+      <span class="cards"><span class="card red">A♥</span><span class="card red">4♦</span></span>
+      <span class="board"><span class="card ">6♣</span><span class="card ">A♠</span><span class="card red">K♦</span></span>
+      <span class="did">you <b>bet</b></span>
+      <span class="verdict" style="color:#34d399;border-color:#34d399">optimal</span>
+      <span class="conf">approximate (multiway)</span>
+    </div>
+    <div class="rec">▶ Recommended: mix → Bet 4.0bb 59% · Check 41%</div>
+    <div class="rows"><div class="arow ">
+    <span class="aname">Check</span>
+    <span class="bar"><span class="fill" style="width:41%"></span></span>
+    <span class="afreq">41%</span>
+    <span class="aev pos">+3.41bb<span class="dim"> ±0.03</span></span>
+    <span class="atags"></span>
+  </div><div class="arow chosen">
+    <span class="aname">Bet 4.0bb</span>
+    <span class="bar"><span class="fill" style="width:59%"></span></span>
+    <span class="afreq">59%</span>
+    <span class="aev pos">+3.79bb<span class="dim"> ±0.04</span></span>
+    <span class="atags"><span class="tag you">you</span></span>
+  </div></div>
+    <div class="dfoot"><span class="dim">flop from BB: EV from rollout vs 2-way modeled range(s).</span></div>
+  </div><div class="decision">
+    <div class="dhead">
+      <span class="street">turn</span>
+      <span class="cards"><span class="card red">A♥</span><span class="card red">4♦</span></span>
+      <span class="board"><span class="card ">6♣</span><span class="card ">A♠</span><span class="card red">K♦</span><span class="card red">5♦</span></span>
+      <span class="did">you <b>check</b></span>
+      <span class="verdict" style="color:#34d399;border-color:#34d399">optimal</span>
+      <span class="conf">approximate (multiway)</span>
+    </div>
+    <div class="rec">▶ Recommended: mix → Check 81% · Bet 7.9bb 19%</div>
+    <div class="rows"><div class="arow chosen">
+    <span class="aname">Check</span>
+    <span class="bar"><span class="fill" style="width:81%"></span></span>
+    <span class="afreq">81%</span>
+    <span class="aev pos">+5.73bb<span class="dim"> ±0.05</span></span>
+    <span class="atags"><span class="tag you">you</span></span>
+  </div><div class="arow ">
+    <span class="aname">Bet 7.9bb</span>
+    <span class="bar"><span class="fill" style="width:19%"></span></span>
+    <span class="afreq">19%</span>
+    <span class="aev pos">+4.25bb<span class="dim"> ±0.09</span></span>
+    <span class="atags"></span>
+  </div></div>
+    <div class="dfoot"><span class="dim">turn from BB: EV from rollout vs 2-way modeled range(s).</span></div>
+  </div><div class="decision">
+    <div class="dhead">
+      <span class="street">river</span>
+      <span class="cards"><span class="card red">A♥</span><span class="card red">4♦</span></span>
+      <span class="board"><span class="card ">6♣</span><span class="card ">A♠</span><span class="card red">K♦</span><span class="card red">5♦</span><span class="card red">J♥</span></span>
+      <span class="did">you <b>check</b></span>
+      <span class="verdict" style="color:#34d399;border-color:#34d399">optimal</span>
+      <span class="conf">approximate (multiway)</span>
+    </div>
+    <div class="rec">▶ Recommended: Check <span class="dim">(98%)</span></div>
+    <div class="rows"><div class="arow chosen">
+    <span class="aname">Check</span>
+    <span class="bar"><span class="fill" style="width:98%"></span></span>
+    <span class="afreq">98%</span>
+    <span class="aev pos">+5.13bb<span class="dim"> ±0.05</span></span>
+    <span class="atags"><span class="tag you">you</span></span>
+  </div><div class="arow ">
+    <span class="aname">Bet 7.9bb</span>
+    <span class="bar"><span class="fill" style="width:2%"></span></span>
+    <span class="afreq">2%</span>
+    <span class="aev pos">+1.07bb<span class="dim"> ±0.09</span></span>
+    <span class="atags"></span>
+  </div></div>
+    <div class="dfoot"><span class="dim">river from BB: EV from rollout vs 2-way modeled range(s).</span></div>
+  </div>
+  </section><section class="hand">
+    <h2>#5165010012 <span class="dim"><span class="card red">6♥</span><span class="card ">2♣</span> · 0.02bb game · BTN 7c476df0 · SB <b>Hero</b> · BB 107f09f9 · UTG 3a8659f4 · HJ 49dab498 · CO 3f797dc7</span></h2>
+    <div class="decision">
+    <div class="dhead">
+      <span class="street">preflop</span>
+      <span class="cards"><span class="card red">6♥</span><span class="card ">2♣</span></span>
+      
+      <span class="did">you <b>fold</b></span>
+      <span class="verdict" style="color:#34d399;border-color:#34d399">optimal</span>
+      <span class="conf">GTO solved</span>
+    </div>
+    <div class="rec">▶ Recommended: Fold <span class="dim">(100%)</span></div>
+    <div class="rows"><div class="arow chosen">
+    <span class="aname">Fold</span>
+    <span class="bar"><span class="fill" style="width:100%"></span></span>
+    <span class="afreq">100%</span>
+    <span class="aev ">+0.00bb</span>
+    <span class="atags"><span class="tag you">you</span></span>
+  </div><div class="arow ">
+    <span class="aname">Call</span>
+    <span class="bar"><span class="fill" style="width:0%"></span></span>
+    <span class="afreq">0%</span>
+    <span class="aev pos">+0.10bb<span class="dim"> ±0.01</span></span>
+    <span class="atags"></span>
+  </div><div class="arow ">
+    <span class="aname">Raise 1.3bb</span>
+    <span class="bar"><span class="fill" style="width:0%"></span></span>
+    <span class="afreq">0%</span>
+    <span class="aev pos">+1.02bb<span class="dim"> ±0.01</span></span>
+    <span class="atags"><span class="tag best">best</span></span>
+  </div></div>
+    <div class="dfoot"><span class="dim">62o preflop from SB: graded vs GTO preflop chart.</span><span class="loss">−1.02bb vs best</span></div>
+  </div>
+  </section><section class="hand">
+    <h2>#5165310001 <span class="dim"><span class="card red">8♦</span><span class="card ">2♠</span> · 0.02bb game · BTN c07fbca9 · BB <b>Hero</b></span></h2>
+    <div class="decision">
+    <div class="dhead">
+      <span class="street">preflop</span>
+      <span class="cards"><span class="card red">8♦</span><span class="card ">2♠</span></span>
+      
+      <span class="did">you <b>fold</b></span>
+      <span class="verdict" style="color:#f87171;border-color:#f87171">blunder</span>
+      <span class="conf">modeled (HU)</span>
+    </div>
+    <div class="rec">▶ Recommended: Raise 5.0bb <span class="dim">(91%)</span></div>
+    <div class="rows"><div class="arow chosen">
+    <span class="aname">Fold</span>
+    <span class="bar"><span class="fill" style="width:5%"></span></span>
+    <span class="afreq">5%</span>
+    <span class="aev ">+0.00bb</span>
+    <span class="atags"><span class="tag you">you</span></span>
+  </div><div class="arow ">
+    <span class="aname">Call</span>
+    <span class="bar"><span class="fill" style="width:4%"></span></span>
+    <span class="afreq">4%</span>
+    <span class="aev neg">-0.15bb<span class="dim"> ±0.02</span></span>
+    <span class="atags"></span>
+  </div><div class="arow ">
+    <span class="aname">Raise 5.0bb</span>
+    <span class="bar"><span class="fill" style="width:91%"></span></span>
+    <span class="afreq">91%</span>
+    <span class="aev pos">+2.92bb<span class="dim"> ±0.03</span></span>
+    <span class="atags"><span class="tag best">best</span></span>
+  </div></div>
+    <div class="dfoot"><span class="dim">preflop from BB: EV from rollout vs heads-up modeled range(s).</span><span class="loss">−2.92bb vs best</span></div>
+  </div>
+  </section><section class="hand">
+    <h2>#5165010013 <span class="dim"><span class="card ">A♣</span><span class="card red">7♥</span> · 0.02bb game · BTN <b>Hero</b> · CO f588ff03 · SB a24bfc3f · BB 11c8cf5c · UTG bb3ce55b · HJ 860aa5a3</span></h2>
+    <div class="decision">
+    <div class="dhead">
+      <span class="street">preflop</span>
+      <span class="cards"><span class="card ">A♣</span><span class="card red">7♥</span></span>
+      
+      <span class="did">you <b>raise</b></span>
+      <span class="verdict" style="color:#34d399;border-color:#34d399">optimal</span>
+      <span class="conf">GTO solved</span>
+    </div>
+    <div class="rec">▶ Recommended: Raise 2.5bb <span class="dim">(100%)</span></div>
+    <div class="rows"><div class="arow ">
+    <span class="aname">Fold</span>
+    <span class="bar"><span class="fill" style="width:0%"></span></span>
+    <span class="afreq">0%</span>
+    <span class="aev ">+0.00bb</span>
+    <span class="atags"></span>
+  </div><div class="arow ">
+    <span class="aname">Call</span>
+    <span class="bar"><span class="fill" style="width:0%"></span></span>
+    <span class="afreq">0%</span>
+    <span class="aev pos">+0.24bb<span class="dim"> ±0.01</span></span>
+    <span class="atags"></span>
+  </div><div class="arow chosen">
+    <span class="aname">Raise 2.5bb</span>
+    <span class="bar"><span class="fill" style="width:100%"></span></span>
+    <span class="afreq">100%</span>
+    <span class="aev pos">+1.13bb<span class="dim"> ±0.01</span></span>
+    <span class="atags"><span class="tag you">you</span></span>
+  </div></div>
+    <div class="dfoot"><span class="dim">A7o preflop from BTN: graded vs GTO preflop chart.</span></div>
+  </div><div class="decision">
+    <div class="dhead">
+      <span class="street">flop</span>
+      <span class="cards"><span class="card ">A♣</span><span class="card red">7♥</span></span>
+      <span class="board"><span class="card red">4♥</span><span class="card red">K♥</span><span class="card red">3♦</span></span>
+      <span class="did">you <b>fold</b></span>
+      <span class="verdict" style="color:#34d399;border-color:#34d399">optimal</span>
+      <span class="conf">GTO solved</span>
+    </div>
+    <div class="rec">▶ Recommended: mix → Check 60% · Bet 4.6bb 40%</div>
+    <div class="rows"><div class="arow ">
+    <span class="aname">Check</span>
+    <span class="bar"><span class="fill" style="width:60%"></span></span>
+    <span class="afreq">60%</span>
+    <span class="aev pos">+2.47bb</span>
+    <span class="atags"></span>
+  </div><div class="arow ">
+    <span class="aname">Bet 4.6bb</span>
+    <span class="bar"><span class="fill" style="width:40%"></span></span>
+    <span class="afreq">40%</span>
+    <span class="aev pos">+4.60bb</span>
+    <span class="atags"><span class="tag best">best</span></span>
+  </div></div>
+    <div class="dfoot"><span class="dim">flop heads-up GTO solve (equity); exploitability 0.01bb.</span></div>
+  </div>
+  </section><section class="hand">
+    <h2>#5165310002 <span class="dim"><span class="card red">A♦</span><span class="card ">K♠</span> · 0.02bb game · BB 0579cd35 · BTN <b>Hero</b></span></h2>
+    <div class="decision">
+    <div class="dhead">
+      <span class="street">preflop</span>
+      <span class="cards"><span class="card red">A♦</span><span class="card ">K♠</span></span>
+      
+      <span class="did">you <b>raise</b></span>
+      <span class="verdict" style="color:#34d399;border-color:#34d399">optimal</span>
+      <span class="conf">GTO solved</span>
+    </div>
+    <div class="rec">▶ Recommended: Raise 1.3bb <span class="dim">(100%)</span></div>
+    <div class="rows"><div class="arow ">
+    <span class="aname">Fold</span>
+    <span class="bar"><span class="fill" style="width:0%"></span></span>
+    <span class="afreq">0%</span>
+    <span class="aev ">+0.00bb</span>
+    <span class="atags"></span>
+  </div><div class="arow ">
+    <span class="aname">Call</span>
+    <span class="bar"><span class="fill" style="width:0%"></span></span>
+    <span class="afreq">0%</span>
+    <span class="aev pos">+0.76bb<span class="dim"> ±0.01</span></span>
+    <span class="atags"></span>
+  </div><div class="arow chosen">
+    <span class="aname">Raise 1.3bb</span>
+    <span class="bar"><span class="fill" style="width:100%"></span></span>
+    <span class="afreq">100%</span>
+    <span class="aev pos">+1.29bb<span class="dim"> ±0.01</span></span>
+    <span class="atags"><span class="tag you">you</span></span>
+  </div></div>
+    <div class="dfoot"><span class="dim">AKo preflop from BTN: graded vs GTO preflop chart.</span></div>
+  </div><div class="decision">
+    <div class="dhead">
+      <span class="street">flop</span>
+      <span class="cards"><span class="card red">A♦</span><span class="card ">K♠</span></span>
+      <span class="board"><span class="card ">5♠</span><span class="card red">8♦</span><span class="card ">4♣</span></span>
+      <span class="did">you <b>check</b></span>
+      <span class="verdict" style="color:#fbbf24;border-color:#fbbf24">suspect</span>
+      <span class="conf">GTO solved</span>
+    </div>
+    <div class="rec">▶ Recommended: mix → Check 66% · Bet 4.0bb 34%</div>
+    <div class="rows"><div class="arow chosen">
+    <span class="aname">Check</span>
+    <span class="bar"><span class="fill" style="width:66%"></span></span>
+    <span class="afreq">66%</span>
+    <span class="aev pos">+2.29bb</span>
+    <span class="atags"><span class="tag you">you</span></span>
+  </div><div class="arow ">
+    <span class="aname">Bet 4.0bb</span>
+    <span class="bar"><span class="fill" style="width:34%"></span></span>
+    <span class="afreq">34%</span>
+    <span class="aev pos">+3.86bb</span>
+    <span class="atags"><span class="tag best">best</span></span>
+  </div></div>
+    <div class="dfoot"><span class="dim">flop heads-up GTO solve (equity); exploitability 0.01bb.</span><span class="loss">−1.57bb vs best</span></div>
+  </div><div class="decision">
+    <div class="dhead">
+      <span class="street">turn</span>
+      <span class="cards"><span class="card red">A♦</span><span class="card ">K♠</span></span>
+      <span class="board"><span class="card ">5♠</span><span class="card red">8♦</span><span class="card ">4♣</span><span class="card ">A♣</span></span>
+      <span class="did">you <b>raise</b></span>
+      <span class="verdict" style="color:#34d399;border-color:#34d399">optimal</span>
+      <span class="conf">GTO solved</span>
+    </div>
+    <div class="rec">▶ Recommended: mix → Call 61% · Fold 36%</div>
+    <div class="rows"><div class="arow ">
+    <span class="aname">Fold</span>
+    <span class="bar"><span class="fill" style="width:36%"></span></span>
+    <span class="afreq">36%</span>
+    <span class="aev ">+0.00bb</span>
+    <span class="atags"></span>
+  </div><div class="arow ">
+    <span class="aname">Call</span>
+    <span class="bar"><span class="fill" style="width:61%"></span></span>
+    <span class="afreq">61%</span>
+    <span class="aev pos">+2.31bb</span>
+    <span class="atags"></span>
+  </div><div class="arow chosen">
+    <span class="aname">Raise 14.0bb</span>
+    <span class="bar"><span class="fill" style="width:3%"></span></span>
+    <span class="afreq">3%</span>
+    <span class="aev pos">+4.14bb</span>
+    <span class="atags"><span class="tag you">you</span></span>
+  </div></div>
+    <div class="dfoot"><span class="dim">turn heads-up GTO solve (equity); exploitability 0.00bb.</span></div>
+  </div>
+  </section><section class="hand">
+    <h2>#5165310003 <span class="dim"><span class="card red">J♥</span><span class="card ">T♠</span> · 0.02bb game · BTN 635321fa · SB <b>Hero</b> · BB 1f3a2c7d</span></h2>
+    <div class="decision">
+    <div class="dhead">
+      <span class="street">preflop</span>
+      <span class="cards"><span class="card red">J♥</span><span class="card ">T♠</span></span>
+      
+      <span class="did">you <b>call</b></span>
+      <span class="verdict" style="color:#f87171;border-color:#f87171">blunder</span>
+      <span class="conf">modeled (HU)</span>
+    </div>
+    <div class="rec">▶ Recommended: Raise 5.0bb <span class="dim">(89%)</span></div>
+    <div class="rows"><div class="arow ">
+    <span class="aname">Fold</span>
+    <span class="bar"><span class="fill" style="width:4%"></span></span>
+    <span class="afreq">4%</span>
+    <span class="aev ">+0.00bb</span>
+    <span class="atags"></span>
+  </div><div class="arow chosen">
+    <span class="aname">Call</span>
+    <span class="bar"><span class="fill" style="width:7%"></span></span>
+    <span class="afreq">7%</span>
+    <span class="aev pos">+0.70bb<span class="dim"> ±0.03</span></span>
+    <span class="atags"><span class="tag you">you</span></span>
+  </div><div class="arow ">
+    <span class="aname">Raise 5.0bb</span>
+    <span class="bar"><span class="fill" style="width:89%"></span></span>
+    <span class="afreq">89%</span>
+    <span class="aev pos">+3.23bb<span class="dim"> ±0.03</span></span>
+    <span class="atags"><span class="tag best">best</span></span>
+  </div></div>
+    <div class="dfoot"><span class="dim">preflop from SB: EV from rollout vs heads-up modeled range(s).</span><span class="loss">−2.52bb vs best</span></div>
+  </div><div class="decision">
+    <div class="dhead">
+      <span class="street">flop</span>
+      <span class="cards"><span class="card red">J♥</span><span class="card ">T♠</span></span>
+      <span class="board"><span class="card ">8♠</span><span class="card ">9♣</span><span class="card red">9♦</span></span>
+      <span class="did">you <b>check</b></span>
+      <span class="verdict" style="color:#34d399;border-color:#34d399">optimal</span>
+      <span class="conf">GTO solved</span>
+    </div>
+    <div class="rec">▶ Recommended: Check <span class="dim">(99%)</span></div>
+    <div class="rows"><div class="arow chosen">
+    <span class="aname">Check</span>
+    <span class="bar"><span class="fill" style="width:99%"></span></span>
+    <span class="afreq">99%</span>
+    <span class="aev pos">+2.06bb</span>
+    <span class="atags"><span class="tag you">you</span></span>
+  </div><div class="arow ">
+    <span class="aname">Bet 4.0bb</span>
+    <span class="bar"><span class="fill" style="width:1%"></span></span>
+    <span class="afreq">1%</span>
+    <span class="aev pos">+1.72bb</span>
+    <span class="atags"></span>
+  </div></div>
+    <div class="dfoot"><span class="dim">flop heads-up GTO solve (equity); exploitability 0.01bb.</span></div>
+  </div><div class="decision">
+    <div class="dhead">
+      <span class="street">turn</span>
+      <span class="cards"><span class="card red">J♥</span><span class="card ">T♠</span></span>
+      <span class="board"><span class="card ">8♠</span><span class="card ">9♣</span><span class="card red">9♦</span><span class="card red">Q♥</span></span>
+      <span class="did">you <b>bet</b></span>
+      <span class="verdict" style="color:#34d399;border-color:#34d399">optimal</span>
+      <span class="conf">GTO solved</span>
+    </div>
+    <div class="rec">▶ Recommended: mix → Bet 4.0bb 73% · Check 27%</div>
+    <div class="rows"><div class="arow ">
+    <span class="aname">Check</span>
+    <span class="bar"><span class="fill" style="width:27%"></span></span>
+    <span class="afreq">27%</span>
+    <span class="aev pos">+6.80bb</span>
+    <span class="atags"></span>
+  </div><div class="arow chosen">
+    <span class="aname">Bet 4.0bb</span>
+    <span class="bar"><span class="fill" style="width:73%"></span></span>
+    <span class="afreq">73%</span>
+    <span class="aev pos">+6.81bb</span>
+    <span class="atags"><span class="tag you">you</span></span>
+  </div></div>
+    <div class="dfoot"><span class="dim">turn heads-up GTO solve (equity); exploitability 0.01bb.</span></div>
+  </div><div class="decision">
+    <div class="dhead">
+      <span class="street">river</span>
+      <span class="cards"><span class="card red">J♥</span><span class="card ">T♠</span></span>
+      <span class="board"><span class="card ">8♠</span><span class="card ">9♣</span><span class="card red">9♦</span><span class="card red">Q♥</span><span class="card red">A♥</span></span>
+      <span class="did">you <b>check</b></span>
+      <span class="verdict" style="color:#34d399;border-color:#34d399">optimal</span>
+      <span class="conf">GTO solved</span>
+    </div>
+    <div class="rec">▶ Recommended: mix → Check 81% · Bet 7.9bb 19%</div>
+    <div class="rows"><div class="arow chosen">
+    <span class="aname">Check</span>
+    <span class="bar"><span class="fill" style="width:81%"></span></span>
+    <span class="afreq">81%</span>
+    <span class="aev pos">+15.13bb</span>
+    <span class="atags"><span class="tag you">you</span></span>
+  </div><div class="arow ">
+    <span class="aname">Bet 7.9bb</span>
+    <span class="bar"><span class="fill" style="width:19%"></span></span>
+    <span class="afreq">19%</span>
+    <span class="aev pos">+15.01bb</span>
+    <span class="atags"></span>
+  </div></div>
+    <div class="dfoot"><span class="dim">river heads-up GTO solve (exact); exploitability 0.02bb.</span></div>
+  </div><div class="decision">
+    <div class="dhead">
+      <span class="street">river</span>
+      <span class="cards"><span class="card red">J♥</span><span class="card ">T♠</span></span>
+      <span class="board"><span class="card ">8♠</span><span class="card ">9♣</span><span class="card red">9♦</span><span class="card red">Q♥</span><span class="card red">A♥</span></span>
+      <span class="did">you <b>raise</b></span>
+      <span class="verdict" style="color:#34d399;border-color:#34d399">optimal</span>
+      <span class="conf">GTO solved</span>
+    </div>
+    <div class="rec">▶ Recommended: Raise 36.0bb <span class="dim">(100%)</span></div>
+    <div class="rows"><div class="arow ">
+    <span class="aname">Fold</span>
+    <span class="bar"><span class="fill" style="width:0%"></span></span>
+    <span class="afreq">0%</span>
+    <span class="aev ">+0.00bb</span>
+    <span class="atags"></span>
+  </div><div class="arow ">
+    <span class="aname">Call</span>
+    <span class="bar"><span class="fill" style="width:0%"></span></span>
+    <span class="afreq">0%</span>
+    <span class="aev pos">+17.01bb</span>
+    <span class="atags"></span>
+  </div><div class="arow chosen">
+    <span class="aname">Raise 36.0bb</span>
+    <span class="bar"><span class="fill" style="width:100%"></span></span>
+    <span class="afreq">100%</span>
+    <span class="aev pos">+24.36bb</span>
+    <span class="atags"><span class="tag you">you</span></span>
+  </div></div>
+    <div class="dfoot"><span class="dim">river heads-up GTO solve (exact); exploitability 0.02bb.</span></div>
+  </div><div class="decision">
+    <div class="dhead">
+      <span class="street">river</span>
+      <span class="cards"><span class="card red">J♥</span><span class="card ">T♠</span></span>
+      <span class="board"><span class="card ">8♠</span><span class="card ">9♣</span><span class="card red">9♦</span><span class="card red">Q♥</span><span class="card red">A♥</span></span>
+      <span class="did">you <b>all-in</b></span>
+      <span class="verdict" style="color:#34d399;border-color:#34d399">optimal</span>
+      <span class="conf">GTO solved</span>
+    </div>
+    <div class="rec">▶ Recommended: Call <span class="dim">(100%)</span></div>
+    <div class="rows"><div class="arow ">
+    <span class="aname">Fold</span>
+    <span class="bar"><span class="fill" style="width:0%"></span></span>
+    <span class="afreq">0%</span>
+    <span class="aev ">+0.00bb</span>
+    <span class="atags"></span>
+  </div><div class="arow ">
+    <span class="aname">Call</span>
+    <span class="bar"><span class="fill" style="width:100%"></span></span>
+    <span class="afreq">100%</span>
+    <span class="aev pos">+91.60bb</span>
+    <span class="atags"><span class="tag best">best</span></span>
+  </div></div>
+    <div class="dfoot"><span class="dim">river heads-up GTO solve (exact); exploitability 0.01bb.</span></div>
+  </div>
+  </section><section class="hand">
+    <h2>#5165310004 <span class="dim"><span class="card red">T♦</span><span class="card red">5♥</span> · 0.02bb game · UTG 42b3328a · BTN <b>Hero</b> · SB 2c361e5c · BB 9e61f8e1</span></h2>
+    <div class="decision">
+    <div class="dhead">
+      <span class="street">preflop</span>
+      <span class="cards"><span class="card red">T♦</span><span class="card red">5♥</span></span>
+      
+      <span class="did">you <b>fold</b></span>
+      <span class="verdict" style="color:#34d399;border-color:#34d399">optimal</span>
+      <span class="conf">GTO solved</span>
+    </div>
+    <div class="rec">▶ Recommended: Fold <span class="dim">(100%)</span></div>
+    <div class="rows"><div class="arow chosen">
+    <span class="aname">Fold</span>
+    <span class="bar"><span class="fill" style="width:100%"></span></span>
+    <span class="afreq">100%</span>
+    <span class="aev ">+0.00bb</span>
+    <span class="atags"><span class="tag you">you</span></span>
+  </div><div class="arow ">
+    <span class="aname">Call</span>
+    <span class="bar"><span class="fill" style="width:0%"></span></span>
+    <span class="afreq">0%</span>
+    <span class="aev neg">-0.14bb<span class="dim"> ±0.01</span></span>
+    <span class="atags"></span>
+  </div><div class="arow ">
+    <span class="aname">Raise 2.5bb</span>
+    <span class="bar"><span class="fill" style="width:0%"></span></span>
+    <span class="afreq">0%</span>
+    <span class="aev pos">+0.86bb<span class="dim"> ±0.02</span></span>
+    <span class="atags"><span class="tag best">best</span></span>
+  </div></div>
+    <div class="dfoot"><span class="dim">T5o preflop from BTN: graded vs GTO preflop chart.</span><span class="loss">−0.86bb vs best</span></div>
+  </div>
+  </section><section class="hand">
+    <h2>#5165310005 <span class="dim"><span class="card ">6♠</span><span class="card ">5♣</span> · 0.02bb game · UTG 7d9816e0 · CO <b>Hero</b> · BTN c17b63fe · SB 62e216ec · BB 1f18ccfd</span></h2>
+    <div class="decision">
+    <div class="dhead">
+      <span class="street">preflop</span>
+      <span class="cards"><span class="card ">6♠</span><span class="card ">5♣</span></span>
+      
+      <span class="did">you <b>fold</b></span>
+      <span class="verdict" style="color:#34d399;border-color:#34d399">optimal</span>
+      <span class="conf">GTO solved</span>
+    </div>
+    <div class="rec">▶ Recommended: Fold <span class="dim">(100%)</span></div>
+    <div class="rows"><div class="arow chosen">
+    <span class="aname">Fold</span>
+    <span class="bar"><span class="fill" style="width:100%"></span></span>
+    <span class="afreq">100%</span>
+    <span class="aev ">+0.00bb</span>
+    <span class="atags"><span class="tag you">you</span></span>
+  </div><div class="arow ">
+    <span class="aname">Call</span>
+    <span class="bar"><span class="fill" style="width:0%"></span></span>
+    <span class="afreq">0%</span>
+    <span class="aev neg">-0.10bb<span class="dim"> ±0.01</span></span>
+    <span class="atags"></span>
+  </div><div class="arow ">
+    <span class="aname">Raise 2.5bb</span>
+    <span class="bar"><span class="fill" style="width:0%"></span></span>
+    <span class="afreq">0%</span>
+    <span class="aev pos">+1.09bb<span class="dim"> ±0.01</span></span>
+    <span class="atags"><span class="tag best">best</span></span>
+  </div></div>
+    <div class="dfoot"><span class="dim">65o preflop from CO: graded vs GTO preflop chart.</span><span class="loss">−1.09bb vs best</span></div>
+  </div>
+  </section><section class="hand">
+    <h2>#5165310006 <span class="dim"><span class="card ">5♠</span><span class="card red">4♥</span> · 0.02bb game · UTG 7800e550 · HJ <b>Hero</b> · CO 6cd26762 · BTN cffb44d6 · SB eb3d4df0 · BB c9c02f60</span></h2>
+    <div class="decision">
+    <div class="dhead">
+      <span class="street">preflop</span>
+      <span class="cards"><span class="card ">5♠</span><span class="card red">4♥</span></span>
+      
+      <span class="did">you <b>call</b></span>
+      <span class="verdict" style="color:#f87171;border-color:#f87171">blunder</span>
+      <span class="conf">GTO solved</span>
+    </div>
+    <div class="rec">▶ Recommended: Fold <span class="dim">(100%)</span></div>
+    <div class="rows"><div class="arow ">
+    <span class="aname">Fold</span>
+    <span class="bar"><span class="fill" style="width:100%"></span></span>
+    <span class="afreq">100%</span>
+    <span class="aev ">+0.00bb</span>
+    <span class="atags"></span>
+  </div><div class="arow chosen">
+    <span class="aname">Call</span>
+    <span class="bar"><span class="fill" style="width:0%"></span></span>
+    <span class="afreq">0%</span>
+    <span class="aev neg">-0.30bb<span class="dim"> ±0.01</span></span>
+    <span class="atags"><span class="tag you">you</span></span>
+  </div><div class="arow ">
+    <span class="aname">Raise 2.5bb</span>
+    <span class="bar"><span class="fill" style="width:0%"></span></span>
+    <span class="afreq">0%</span>
+    <span class="aev pos">+0.80bb<span class="dim"> ±0.03</span></span>
+    <span class="atags"><span class="tag best">best</span></span>
+  </div></div>
+    <div class="dfoot"><span class="dim">54o preflop from HJ: graded vs GTO preflop chart.</span><span class="loss">−1.10bb vs best</span></div>
+  </div><div class="decision">
+    <div class="dhead">
+      <span class="street">preflop</span>
+      <span class="cards"><span class="card ">5♠</span><span class="card red">4♥</span></span>
+      
+      <span class="did">you <b>call</b></span>
+      <span class="verdict" style="color:#f87171;border-color:#f87171">blunder</span>
+      <span class="conf">approximate (multiway)</span>
+    </div>
+    <div class="rec">▶ Recommended: Raise 7.5bb <span class="dim">(100%)</span></div>
+    <div class="rows"><div class="arow ">
+    <span class="aname">Fold</span>
+    <span class="bar"><span class="fill" style="width:0%"></span></span>
+    <span class="afreq">0%</span>
+    <span class="aev ">+0.00bb</span>
+    <span class="atags"></span>
+  </div><div class="arow chosen">
+    <span class="aname">Call</span>
+    <span class="bar"><span class="fill" style="width:0%"></span></span>
+    <span class="afreq">0%</span>
+    <span class="aev pos">+0.49bb<span class="dim"> ±0.06</span></span>
+    <span class="atags"><span class="tag you">you</span></span>
+  </div><div class="arow ">
+    <span class="aname">Raise 7.5bb</span>
+    <span class="bar"><span class="fill" style="width:100%"></span></span>
+    <span class="afreq">100%</span>
+    <span class="aev pos">+7.23bb<span class="dim"> ±0.11</span></span>
+    <span class="atags"><span class="tag best">best</span></span>
+  </div></div>
+    <div class="dfoot"><span class="dim">preflop from HJ: EV from rollout vs 3-way modeled range(s).</span><span class="loss">−6.74bb vs best</span></div>
+  </div><div class="decision">
+    <div class="dhead">
+      <span class="street">flop</span>
+      <span class="cards"><span class="card ">5♠</span><span class="card red">4♥</span></span>
+      <span class="board"><span class="card ">J♣</span><span class="card ">J♠</span><span class="card red">K♦</span></span>
+      <span class="did">you <b>check</b></span>
+      <span class="verdict" style="color:#34d399;border-color:#34d399">optimal</span>
+      <span class="conf">approximate (multiway)</span>
+    </div>
+    <div class="rec">▶ Recommended: Check <span class="dim">(100%)</span></div>
+    <div class="rows"><div class="arow chosen">
+    <span class="aname">Check</span>
+    <span class="bar"><span class="fill" style="width:100%"></span></span>
+    <span class="afreq">100%</span>
+    <span class="aev pos">+0.42bb<span class="dim"> ±0.02</span></span>
+    <span class="atags"><span class="tag you">you</span></span>
+  </div><div class="arow ">
+    <span class="aname">Bet 11.6bb</span>
+    <span class="bar"><span class="fill" style="width:0%"></span></span>
+    <span class="afreq">0%</span>
+    <span class="aev neg">-6.89bb<span class="dim"> ±0.10</span></span>
+    <span class="atags"></span>
+  </div></div>
+    <div class="dfoot"><span class="dim">flop from HJ: EV from rollout vs 3-way modeled range(s).</span></div>
+  </div><div class="decision">
+    <div class="dhead">
+      <span class="street">flop</span>
+      <span class="cards"><span class="card ">5♠</span><span class="card red">4♥</span></span>
+      <span class="board"><span class="card ">J♣</span><span class="card ">J♠</span><span class="card red">K♦</span></span>
+      <span class="did">you <b>fold</b></span>
+      <span class="verdict" style="color:#34d399;border-color:#34d399">optimal</span>
+      <span class="conf">GTO solved</span>
+    </div>
+    <div class="rec">▶ Recommended: Fold <span class="dim">(100%)</span></div>
+    <div class="rows"><div class="arow chosen">
+    <span class="aname">Fold</span>
+    <span class="bar"><span class="fill" style="width:100%"></span></span>
+    <span class="afreq">100%</span>
+    <span class="aev ">+0.00bb</span>
+    <span class="atags"><span class="tag you">you</span></span>
+  </div><div class="arow ">
+    <span class="aname">Call</span>
+    <span class="bar"><span class="fill" style="width:0%"></span></span>
+    <span class="afreq">0%</span>
+    <span class="aev neg">-5.97bb</span>
+    <span class="atags"></span>
+  </div><div class="arow ">
+    <span class="aname">Raise 53.5bb</span>
+    <span class="bar"><span class="fill" style="width:0%"></span></span>
+    <span class="afreq">0%</span>
+    <span class="aev neg">-3.70bb</span>
+    <span class="atags"></span>
+  </div></div>
+    <div class="dfoot"><span class="dim">flop heads-up GTO solve (equity); exploitability 0.01bb.</span></div>
+  </div>
+  </section><section class="hand">
+    <h2>#5165310007 <span class="dim"><span class="card red">9♦</span><span class="card red">8♦</span> · 0.02bb game · BTN 4d6d3f57 · SB 1300ed4e · BB <b>Hero</b> · UTG 275345fa · CO 203980b4</span></h2>
+    <div class="decision">
+    <div class="dhead">
+      <span class="street">preflop</span>
+      <span class="cards"><span class="card red">9♦</span><span class="card red">8♦</span></span>
+      
+      <span class="did">you <b>call</b></span>
+      <span class="verdict" style="color:#f87171;border-color:#f87171">blunder</span>
+      <span class="conf">approximate (multiway)</span>
+    </div>
+    <div class="rec">▶ Recommended: Raise 3.5bb <span class="dim">(94%)</span></div>
+    <div class="rows"><div class="arow ">
+    <span class="aname">Fold</span>
+    <span class="bar"><span class="fill" style="width:2%"></span></span>
+    <span class="afreq">2%</span>
+    <span class="aev ">+0.00bb</span>
+    <span class="atags"></span>
+  </div><div class="arow chosen">
+    <span class="aname">Call</span>
+    <span class="bar"><span class="fill" style="width:4%"></span></span>
+    <span class="afreq">4%</span>
+    <span class="aev pos">+0.84bb<span class="dim"> ±0.03</span></span>
+    <span class="atags"><span class="tag you">you</span></span>
+  </div><div class="arow ">
+    <span class="aname">Raise 3.5bb</span>
+    <span class="bar"><span class="fill" style="width:94%"></span></span>
+    <span class="afreq">94%</span>
+    <span class="aev pos">+3.94bb<span class="dim"> ±0.05</span></span>
+    <span class="atags"><span class="tag best">best</span></span>
+  </div></div>
+    <div class="dfoot"><span class="dim">preflop from BB: EV from rollout vs 3-way modeled range(s).</span><span class="loss">−3.09bb vs best</span></div>
+  </div><div class="decision">
+    <div class="dhead">
+      <span class="street">flop</span>
+      <span class="cards"><span class="card red">9♦</span><span class="card red">8♦</span></span>
+      <span class="board"><span class="card ">A♠</span><span class="card ">8♣</span><span class="card ">3♣</span></span>
+      <span class="did">you <b>bet</b></span>
+      <span class="verdict" style="color:#fbbf24;border-color:#fbbf24">suspect</span>
+      <span class="conf">approximate (multiway)</span>
+    </div>
+    <div class="rec">▶ Recommended: mix → Check 70% · Bet 5.3bb 30%</div>
+    <div class="rows"><div class="arow ">
+    <span class="aname">Check</span>
+    <span class="bar"><span class="fill" style="width:70%"></span></span>
+    <span class="afreq">70%</span>
+    <span class="aev pos">+1.78bb<span class="dim"> ±0.03</span></span>
+    <span class="atags"><span class="tag best">best</span></span>
+  </div><div class="arow chosen">
+    <span class="aname">Bet 5.3bb</span>
+    <span class="bar"><span class="fill" style="width:30%"></span></span>
+    <span class="afreq">30%</span>
+    <span class="aev pos">+0.94bb<span class="dim"> ±0.07</span></span>
+    <span class="atags"><span class="tag you">you</span></span>
+  </div></div>
+    <div class="dfoot"><span class="dim">flop from BB: EV from rollout vs 3-way modeled range(s).</span><span class="loss">−0.85bb vs best</span></div>
+  </div><div class="decision">
+    <div class="dhead">
+      <span class="street">turn</span>
+      <span class="cards"><span class="card red">9♦</span><span class="card red">8♦</span></span>
+      <span class="board"><span class="card ">A♠</span><span class="card ">8♣</span><span class="card ">3♣</span><span class="card ">9♠</span></span>
+      <span class="did">you <b>bet</b></span>
+      <span class="verdict" style="color:#34d399;border-color:#34d399">optimal</span>
+      <span class="conf">GTO solved</span>
+    </div>
+    <div class="rec">▶ Recommended: mix → Bet 7.9bb 72% · Check 28%</div>
+    <div class="rows"><div class="arow ">
+    <span class="aname">Check</span>
+    <span class="bar"><span class="fill" style="width:28%"></span></span>
+    <span class="afreq">28%</span>
+    <span class="aev pos">+10.74bb</span>
+    <span class="atags"></span>
+  </div><div class="arow chosen">
+    <span class="aname">Bet 7.9bb</span>
+    <span class="bar"><span class="fill" style="width:72%"></span></span>
+    <span class="afreq">72%</span>
+    <span class="aev pos">+10.82bb</span>
+    <span class="atags"><span class="tag you">you</span></span>
+  </div></div>
+    <div class="dfoot"><span class="dim">turn heads-up GTO solve (equity); exploitability 0.02bb.</span></div>
+  </div><div class="decision">
+    <div class="dhead">
+      <span class="street">river</span>
+      <span class="cards"><span class="card red">9♦</span><span class="card red">8♦</span></span>
+      <span class="board"><span class="card ">A♠</span><span class="card ">8♣</span><span class="card ">3♣</span><span class="card ">9♠</span><span class="card red">5♥</span></span>
+      <span class="did">you <b>bet</b></span>
+      <span class="verdict" style="color:#34d399;border-color:#34d399">optimal</span>
+      <span class="conf">GTO solved</span>
+    </div>
+    <div class="rec">▶ Recommended: Bet 15.8bb <span class="dim">(98%)</span></div>
+    <div class="rows"><div class="arow ">
+    <span class="aname">Check</span>
+    <span class="bar"><span class="fill" style="width:2%"></span></span>
+    <span class="afreq">2%</span>
+    <span class="aev pos">+24.15bb</span>
+    <span class="atags"></span>
+  </div><div class="arow chosen">
+    <span class="aname">Bet 15.8bb</span>
+    <span class="bar"><span class="fill" style="width:98%"></span></span>
+    <span class="afreq">98%</span>
+    <span class="aev pos">+25.72bb</span>
+    <span class="atags"><span class="tag you">you</span></span>
+  </div></div>
+    <div class="dfoot"><span class="dim">river heads-up GTO solve (exact); exploitability 0.04bb.</span></div>
+  </div>
+  </section><section class="hand">
+    <h2>#5165310008 <span class="dim"><span class="card ">A♠</span><span class="card ">K♠</span> · 0.02bb game · BTN 5f0dce7d · SB <b>Hero</b> · BB bbb14177 · UTG fc37beee</span></h2>
+    <div class="decision">
+    <div class="dhead">
+      <span class="street">preflop</span>
+      <span class="cards"><span class="card ">A♠</span><span class="card ">K♠</span></span>
+      
+      <span class="did">you <b>raise</b></span>
+      <span class="verdict" style="color:#34d399;border-color:#34d399">optimal</span>
+      <span class="conf">GTO solved</span>
+    </div>
+    <div class="rec">▶ Recommended: Raise 1.3bb <span class="dim">(100%)</span></div>
+    <div class="rows"><div class="arow ">
+    <span class="aname">Fold</span>
+    <span class="bar"><span class="fill" style="width:0%"></span></span>
+    <span class="afreq">0%</span>
+    <span class="aev ">+0.00bb</span>
+    <span class="atags"></span>
+  </div><div class="arow ">
+    <span class="aname">Call</span>
+    <span class="bar"><span class="fill" style="width:0%"></span></span>
+    <span class="afreq">0%</span>
+    <span class="aev pos">+0.80bb<span class="dim"> ±0.01</span></span>
+    <span class="atags"></span>
+  </div><div class="arow chosen">
+    <span class="aname">Raise 1.3bb</span>
+    <span class="bar"><span class="fill" style="width:100%"></span></span>
+    <span class="afreq">100%</span>
+    <span class="aev pos">+1.30bb<span class="dim"> ±0.01</span></span>
+    <span class="atags"><span class="tag you">you</span></span>
+  </div></div>
+    <div class="dfoot"><span class="dim">AKs preflop from SB: graded vs GTO preflop chart.</span></div>
+  </div><div class="decision">
+    <div class="dhead">
+      <span class="street">flop</span>
+      <span class="cards"><span class="card ">A♠</span><span class="card ">K♠</span></span>
+      <span class="board"><span class="card red">4♦</span><span class="card red">J♥</span><span class="card ">2♠</span></span>
+      <span class="did">you <b>bet</b></span>
+      <span class="verdict" style="color:#34d399;border-color:#34d399">optimal</span>
+      <span class="conf">GTO solved</span>
+    </div>
+    <div class="rec">▶ Recommended: Check <span class="dim">(97%)</span></div>
+    <div class="rows"><div class="arow ">
+    <span class="aname">Check</span>
+    <span class="bar"><span class="fill" style="width:97%"></span></span>
+    <span class="afreq">97%</span>
+    <span class="aev pos">+1.81bb</span>
+    <span class="atags"></span>
+  </div><div class="arow chosen">
+    <span class="aname">Bet 4.0bb</span>
+    <span class="bar"><span class="fill" style="width:3%"></span></span>
+    <span class="afreq">3%</span>
+    <span class="aev pos">+2.60bb</span>
+    <span class="atags"><span class="tag you">you</span></span>
+  </div></div>
+    <div class="dfoot"><span class="dim">flop heads-up GTO solve (equity); exploitability 0.01bb.</span></div>
+  </div>
+  </section><section class="hand">
+    <h2>#5165310009 <span class="dim"><span class="card ">2♠</span><span class="card red">2♦</span> · 0.02bb game · UTG 357f4195 · BTN <b>Hero</b> · SB af96dabc · BB 4c3c34a7</span></h2>
+    <div class="decision">
+    <div class="dhead">
+      <span class="street">preflop</span>
+      <span class="cards"><span class="card ">2♠</span><span class="card red">2♦</span></span>
+      
+      <span class="did">you <b>raise</b></span>
+      <span class="verdict" style="color:#9ca3af;border-color:#9ca3af">unknown</span>
+      <span class="conf">approximate (multiway)</span>
+    </div>
+    <div class="rec">▶ Recommended: —</div>
+    <div class="rows"></div>
+    <div class="dfoot"><span class="dim">no live villain with a modeled range</span></div>
+  </div>
+  </section>
+</body></html>

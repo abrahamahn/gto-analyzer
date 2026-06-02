@@ -1,0 +1,232 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - link "poker" [ref=e5] [cursor=pointer]:
+      - /url: /
+    - navigation [ref=e6]:
+      - link "Sessions" [ref=e7] [cursor=pointer]:
+        - /url: /sessions
+      - link "Trainer" [ref=e8] [cursor=pointer]:
+        - /url: /trainer
+  - main [ref=e9]:
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - generic [ref=e12]:
+          - heading "Trainer" [level=1] [ref=e13]
+          - paragraph [ref=e14]: Preflop chart trainer for cash and tournament study spots.
+        - button "Random hand" [ref=e15] [cursor=pointer]
+      - generic [ref=e17]:
+        - generic [ref=e18]:
+          - generic [ref=e19]: Format
+          - generic [ref=e20]:
+            - button "Cash" [pressed] [ref=e21] [cursor=pointer]
+            - button "Tournament" [ref=e22] [cursor=pointer]
+        - generic [ref=e23]:
+          - generic [ref=e24]: Stack
+          - button "100bb" [pressed] [ref=e26] [cursor=pointer]
+        - generic [ref=e27]:
+          - generic [ref=e28]: Scenario
+          - generic [ref=e29]:
+            - button "RFI" [pressed] [ref=e30] [cursor=pointer]
+            - button "BB vs BTN open" [ref=e31] [cursor=pointer]
+        - generic [ref=e32]:
+          - generic [ref=e33]: Seat
+          - generic [ref=e34]:
+            - button "UTG" [ref=e35] [cursor=pointer]
+            - button "HJ" [ref=e36] [cursor=pointer]
+            - button "CO" [ref=e37] [cursor=pointer]
+            - button "BTN" [pressed] [ref=e38] [cursor=pointer]
+            - button "SB" [ref=e39] [cursor=pointer]
+      - generic [ref=e40]:
+        - generic [ref=e41]:
+          - generic [ref=e42]:
+            - heading "Cash 100bb RFI - BTN" [level=2] [ref=e43]
+            - paragraph [ref=e44]: Button open-raise, 6-max — widest opening range.
+          - generic [ref=e46]:
+            - button "AA" [ref=e47] [cursor=pointer]
+            - button "AKs" [ref=e48] [cursor=pointer]
+            - button "AQs" [ref=e49] [cursor=pointer]
+            - button "AJs" [ref=e50] [cursor=pointer]
+            - button "ATs" [ref=e51] [cursor=pointer]
+            - button "A9s" [ref=e52] [cursor=pointer]
+            - button "A8s" [ref=e53] [cursor=pointer]
+            - button "A7s" [ref=e54] [cursor=pointer]
+            - button "A6s" [ref=e55] [cursor=pointer]
+            - button "A5s" [ref=e56] [cursor=pointer]
+            - button "A4s" [ref=e57] [cursor=pointer]
+            - button "A3s" [ref=e58] [cursor=pointer]
+            - button "A2s" [ref=e59] [cursor=pointer]
+            - button "AKo" [ref=e60] [cursor=pointer]
+            - button "KK" [ref=e61] [cursor=pointer]
+            - button "KQs" [ref=e62] [cursor=pointer]
+            - button "KJs" [ref=e63] [cursor=pointer]
+            - button "KTs" [ref=e64] [cursor=pointer]
+            - button "K9s" [ref=e65] [cursor=pointer]
+            - button "K8s" [ref=e66] [cursor=pointer]
+            - button "K7s" [ref=e67] [cursor=pointer]
+            - button "K6s" [ref=e68] [cursor=pointer]
+            - button "K5s" [ref=e69] [cursor=pointer]
+            - button "K4s" [ref=e70] [cursor=pointer]
+            - button "K3s" [ref=e71] [cursor=pointer]
+            - button "K2s" [ref=e72] [cursor=pointer]
+            - button "AQo" [ref=e73] [cursor=pointer]
+            - button "KQo" [ref=e74] [cursor=pointer]
+            - button "QQ" [ref=e75] [cursor=pointer]
+            - button "QJs" [ref=e76] [cursor=pointer]
+            - button "QTs" [ref=e77] [cursor=pointer]
+            - button "Q9s" [ref=e78] [cursor=pointer]
+            - button "Q8s" [ref=e79] [cursor=pointer]
+            - button "Q7s" [ref=e80] [cursor=pointer]
+            - button "Q6s" [ref=e81] [cursor=pointer]
+            - button "Q5s" [ref=e82] [cursor=pointer]
+            - button "Q4s" [ref=e83] [cursor=pointer]
+            - button "Q3s" [ref=e84] [cursor=pointer]
+            - button "Q2s" [ref=e85] [cursor=pointer]
+            - button "AJo" [ref=e86] [cursor=pointer]
+            - button "KJo" [ref=e87] [cursor=pointer]
+            - button "QJo" [ref=e88] [cursor=pointer]
+            - button "JJ" [ref=e89] [cursor=pointer]
+            - button "JTs" [ref=e90] [cursor=pointer]
+            - button "J9s" [ref=e91] [cursor=pointer]
+            - button "J8s" [ref=e92] [cursor=pointer]
+            - button "J7s" [ref=e93] [cursor=pointer]
+            - button "J6s" [ref=e94] [cursor=pointer]
+            - button "J5s" [ref=e95] [cursor=pointer]
+            - button "J4s" [ref=e96] [cursor=pointer]
+            - button "J3s" [ref=e97] [cursor=pointer]
+            - button "J2s" [ref=e98] [cursor=pointer]
+            - button "ATo" [ref=e99] [cursor=pointer]
+            - button "KTo" [ref=e100] [cursor=pointer]
+            - button "QTo" [ref=e101] [cursor=pointer]
+            - button "JTo" [ref=e102] [cursor=pointer]
+            - button "TT" [ref=e103] [cursor=pointer]
+            - button "T9s" [ref=e104] [cursor=pointer]
+            - button "T8s" [ref=e105] [cursor=pointer]
+            - button "T7s" [ref=e106] [cursor=pointer]
+            - button "T6s" [ref=e107] [cursor=pointer]
+            - button "T5s" [ref=e108] [cursor=pointer]
+            - button "T4s" [ref=e109] [cursor=pointer]
+            - button "T3s" [ref=e110] [cursor=pointer]
+            - button "T2s" [ref=e111] [cursor=pointer]
+            - button "A9o" [ref=e112] [cursor=pointer]
+            - button "K9o" [ref=e113] [cursor=pointer]
+            - button "Q9o" [ref=e114] [cursor=pointer]
+            - button "J9o" [ref=e115] [cursor=pointer]
+            - button "T9o" [ref=e116] [cursor=pointer]
+            - button "99" [ref=e117] [cursor=pointer]
+            - button "98s" [ref=e118] [cursor=pointer]
+            - button "97s" [ref=e119] [cursor=pointer]
+            - button "96s" [ref=e120] [cursor=pointer]
+            - button "95s" [ref=e121] [cursor=pointer]
+            - button "94s" [ref=e122] [cursor=pointer]
+            - button "93s" [ref=e123] [cursor=pointer]
+            - button "92s" [ref=e124] [cursor=pointer]
+            - button "A8o" [ref=e125] [cursor=pointer]
+            - button "K8o" [ref=e126] [cursor=pointer]
+            - button "Q8o" [ref=e127] [cursor=pointer]
+            - button "J8o" [ref=e128] [cursor=pointer]
+            - button "T8o" [ref=e129] [cursor=pointer]
+            - button "98o" [ref=e130] [cursor=pointer]
+            - button "88" [ref=e131] [cursor=pointer]
+            - button "87s" [ref=e132] [cursor=pointer]
+            - button "86s" [ref=e133] [cursor=pointer]
+            - button "85s" [ref=e134] [cursor=pointer]
+            - button "84s" [ref=e135] [cursor=pointer]
+            - button "83s" [ref=e136] [cursor=pointer]
+            - button "82s" [ref=e137] [cursor=pointer]
+            - button "A7o" [ref=e138] [cursor=pointer]
+            - button "K7o" [ref=e139] [cursor=pointer]
+            - button "Q7o" [ref=e140] [cursor=pointer]
+            - button "J7o" [ref=e141] [cursor=pointer]
+            - button "T7o" [ref=e142] [cursor=pointer]
+            - button "97o" [ref=e143] [cursor=pointer]
+            - button "87o" [ref=e144] [cursor=pointer]
+            - button "77" [ref=e145] [cursor=pointer]
+            - button "76s" [ref=e146] [cursor=pointer]
+            - button "75s" [ref=e147] [cursor=pointer]
+            - button "74s" [ref=e148] [cursor=pointer]
+            - button "73s" [ref=e149] [cursor=pointer]
+            - button "72s" [ref=e150] [cursor=pointer]
+            - button "A6o" [ref=e151] [cursor=pointer]
+            - button "K6o" [ref=e152] [cursor=pointer]
+            - button "Q6o" [ref=e153] [cursor=pointer]
+            - button "J6o" [ref=e154] [cursor=pointer]
+            - button "T6o" [ref=e155] [cursor=pointer]
+            - button "96o" [ref=e156] [cursor=pointer]
+            - button "86o" [ref=e157] [cursor=pointer]
+            - button "76o" [ref=e158] [cursor=pointer]
+            - button "66" [ref=e159] [cursor=pointer]
+            - button "65s" [ref=e160] [cursor=pointer]
+            - button "64s" [ref=e161] [cursor=pointer]
+            - button "63s" [ref=e162] [cursor=pointer]
+            - button "62s" [ref=e163] [cursor=pointer]
+            - button "A5o" [ref=e164] [cursor=pointer]
+            - button "K5o" [ref=e165] [cursor=pointer]
+            - button "Q5o" [ref=e166] [cursor=pointer]
+            - button "J5o" [ref=e167] [cursor=pointer]
+            - button "T5o" [ref=e168] [cursor=pointer]
+            - button "95o" [ref=e169] [cursor=pointer]
+            - button "85o" [ref=e170] [cursor=pointer]
+            - button "75o" [ref=e171] [cursor=pointer]
+            - button "65o" [ref=e172] [cursor=pointer]
+            - button "55" [ref=e173] [cursor=pointer]
+            - button "54s" [ref=e174] [cursor=pointer]
+            - button "53s" [ref=e175] [cursor=pointer]
+            - button "52s" [ref=e176] [cursor=pointer]
+            - button "A4o" [ref=e177] [cursor=pointer]
+            - button "K4o" [ref=e178] [cursor=pointer]
+            - button "Q4o" [ref=e179] [cursor=pointer]
+            - button "J4o" [ref=e180] [cursor=pointer]
+            - button "T4o" [ref=e181] [cursor=pointer]
+            - button "94o" [ref=e182] [cursor=pointer]
+            - button "84o" [ref=e183] [cursor=pointer]
+            - button "74o" [ref=e184] [cursor=pointer]
+            - button "64o" [ref=e185] [cursor=pointer]
+            - button "54o" [ref=e186] [cursor=pointer]
+            - button "44" [ref=e187] [cursor=pointer]
+            - button "43s" [ref=e188] [cursor=pointer]
+            - button "42s" [ref=e189] [cursor=pointer]
+            - button "A3o" [ref=e190] [cursor=pointer]
+            - button "K3o" [ref=e191] [cursor=pointer]
+            - button "Q3o" [ref=e192] [cursor=pointer]
+            - button "J3o" [ref=e193] [cursor=pointer]
+            - button "T3o" [ref=e194] [cursor=pointer]
+            - button "93o" [ref=e195] [cursor=pointer]
+            - button "83o" [ref=e196] [cursor=pointer]
+            - button "73o" [ref=e197] [cursor=pointer]
+            - button "63o" [ref=e198] [cursor=pointer]
+            - button "53o" [ref=e199] [cursor=pointer]
+            - button "43o" [ref=e200] [cursor=pointer]
+            - button "33" [ref=e201] [cursor=pointer]
+            - button "32s" [ref=e202] [cursor=pointer]
+            - button "A2o" [ref=e203] [cursor=pointer]
+            - button "K2o" [ref=e204] [cursor=pointer]
+            - button "Q2o" [ref=e205] [cursor=pointer]
+            - button "J2o" [ref=e206] [cursor=pointer]
+            - button "T2o" [ref=e207] [cursor=pointer]
+            - button "92o" [ref=e208] [cursor=pointer]
+            - button "82o" [ref=e209] [cursor=pointer]
+            - button "72o" [ref=e210] [cursor=pointer]
+            - button "62o" [ref=e211] [cursor=pointer]
+            - button "52o" [ref=e212] [cursor=pointer]
+            - button "42o" [ref=e213] [cursor=pointer]
+            - button "32o" [ref=e214] [cursor=pointer]
+            - button "22" [ref=e215] [cursor=pointer]
+          - generic [ref=e216]:
+            - generic [ref=e217]:
+              - generic [ref=e218]: Raise 2.5bb
+              - generic [ref=e219]: 44%
+            - generic [ref=e220]:
+              - generic [ref=e221]: Fold
+              - generic [ref=e222]: 56%
+        - generic [ref=e223]:
+          - generic [ref=e224]:
+            - heading "AKs" [level=2] [ref=e225]
+            - generic [ref=e226]: 4 combos
+          - generic [ref=e229]:
+            - generic [ref=e230]: Raise 2.5bb
+            - generic [ref=e231]: 100%
+          - generic [ref=e234]:
+            - generic [ref=e235]: Your action
+            - generic [ref=e236]:
+              - button "Raise" [ref=e237] [cursor=pointer]
+              - button "Fold" [ref=e238] [cursor=pointer]

@@ -1,0 +1,204 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - link "poker" [ref=e5] [cursor=pointer]:
+      - /url: /
+    - navigation [ref=e6]:
+      - link "Sessions" [ref=e7] [cursor=pointer]:
+        - /url: /sessions
+      - link "Trainer" [ref=e8] [cursor=pointer]:
+        - /url: /trainer
+  - main [ref=e9]:
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - link "← sessions" [ref=e12] [cursor=pointer]:
+          - /url: /sessions
+        - heading "#5165310003" [level=1] [ref=e13]
+        - generic [ref=e14]: May 21, 02:32 AM
+      - generic [ref=e16]:
+        - generic [ref=e17]: Table
+        - generic [ref=e18]: "200588"
+        - generic [ref=e19]: Blinds
+        - generic [ref=e20]: ₮0.01 / ₮0.02
+        - generic [ref=e21]: Hero
+        - generic [ref=e22]:
+          - generic [ref=e23]: Hero
+          - generic [ref=e24]:
+            - generic [ref=e25]: J♥
+            - generic [ref=e26]: T♠
+      - generic [ref=e27]:
+        - heading "Seats" [level=2] [ref=e28]
+        - generic [ref=e29]:
+          - generic [ref=e31]:
+            - generic [ref=e32]: BTN635321fa
+            - generic [ref=e33]: ₮2.00
+          - generic [ref=e35]:
+            - generic [ref=e36]: SBHero
+            - generic [ref=e37]: ₮0.87
+          - generic [ref=e39]:
+            - generic [ref=e40]: BB1f3a2c7d
+            - generic [ref=e41]: ₮2.00
+      - generic [ref=e42]:
+        - generic [ref=e43]:
+          - generic [ref=e44]:
+            - heading "Hand replay" [level=2] [ref=e45]
+            - generic [ref=e46]: Step through the imported hand and review Hero's decision points.
+          - generic [ref=e47]:
+            - button "Prev" [ref=e48] [cursor=pointer]
+            - button "Next" [ref=e49] [cursor=pointer]
+        - generic [ref=e50]:
+          - generic [ref=e52]:
+            - generic [ref=e54]:
+              - generic [ref=e55]: preflop
+              - generic [ref=e57]: Preflop
+              - generic [ref=e58]: Pot ₮0.08
+            - generic [ref=e59]:
+              - generic [ref=e60]:
+                - generic [ref=e61]: BTN
+                - generic [ref=e62]: Live
+              - generic [ref=e63]: 635321fa
+              - generic [ref=e64]: Stack ₮1.95
+              - generic [ref=e65]: In ₮0.05
+            - generic [ref=e66]:
+              - generic [ref=e67]:
+                - generic [ref=e68]: SB
+                - generic [ref=e69]: Hero
+              - generic [ref=e70]: Hero
+              - generic [ref=e71]: Stack ₮0.86
+              - generic [ref=e72]: In ₮0.01
+            - generic [ref=e73]:
+              - generic [ref=e74]:
+                - generic [ref=e75]: BB
+                - generic [ref=e76]: Live
+              - generic [ref=e77]: 1f3a2c7d
+              - generic [ref=e78]: Stack ₮1.98
+              - generic [ref=e79]: In ₮0.02
+          - complementary [ref=e80]:
+            - generic [ref=e81]: Step 4 of 14
+            - generic [ref=e82]: Hero acts
+            - generic [ref=e83]: Hero calls ₮0.04
+            - generic [ref=e84]: Recommendation unavailable for this Hero action.
+            - slider "Replay step" [ref=e85]: "3"
+        - generic [ref=e86]:
+          - generic [ref=e87]: Hero decisions
+          - generic [ref=e88]:
+            - 'button "preflop step 4 Hero calls ₮0.04 Rec: n/a" [ref=e89] [cursor=pointer]':
+              - generic [ref=e90]:
+                - generic [ref=e91]: preflop
+                - generic [ref=e92]: step 4
+              - generic [ref=e93]: Hero calls ₮0.04
+              - generic [ref=e94]: "Rec: n/a"
+            - 'button "flop step 6 Hero checks Rec: n/a" [ref=e95] [cursor=pointer]':
+              - generic [ref=e96]:
+                - generic [ref=e97]: flop
+                - generic [ref=e98]: step 6
+              - generic [ref=e99]: Hero checks
+              - generic [ref=e100]: "Rec: n/a"
+            - 'button "turn step 8 Hero bets ₮0.06 Rec: n/a" [ref=e101] [cursor=pointer]':
+              - generic [ref=e102]:
+                - generic [ref=e103]: turn
+                - generic [ref=e104]: step 8
+              - generic [ref=e105]: Hero bets ₮0.06
+              - generic [ref=e106]: "Rec: n/a"
+            - 'button "river step 10 Hero checks Rec: n/a" [ref=e107] [cursor=pointer]':
+              - generic [ref=e108]:
+                - generic [ref=e109]: river
+                - generic [ref=e110]: step 10
+              - generic [ref=e111]: Hero checks
+              - generic [ref=e112]: "Rec: n/a"
+            - 'button "river step 12 Hero raises to ₮0.60 Rec: n/a" [ref=e113] [cursor=pointer]':
+              - generic [ref=e114]:
+                - generic [ref=e115]: river
+                - generic [ref=e116]: step 12
+              - generic [ref=e117]: Hero raises to ₮0.60
+              - generic [ref=e118]: "Rec: n/a"
+            - 'button "river step 14 Hero moves all-in ₮0.16 Rec: n/a" [ref=e119] [cursor=pointer]':
+              - generic [ref=e120]:
+                - generic [ref=e121]: river
+                - generic [ref=e122]: step 14
+              - generic [ref=e123]: Hero moves all-in ₮0.16
+              - generic [ref=e124]: "Rec: n/a"
+      - generic [ref=e125]:
+        - heading "Decision details" [level=2] [ref=e126]
+        - paragraph [ref=e127]: analyzing…
+      - generic [ref=e128]:
+        - generic [ref=e129]:
+          - heading "preflop" [level=3] [ref=e131]
+          - generic [ref=e132]:
+            - generic [ref=e133]: Hero SB ₮0.01
+            - generic [ref=e134]: · 1f3a2c7d BB ₮0.02
+          - list [ref=e135]:
+            - listitem [ref=e136]:
+              - generic [ref=e137]: 635321fa
+              - generic [ref=e138]: raises to
+              - generic [ref=e139]: ₮0.05
+            - listitem [ref=e140]:
+              - generic [ref=e141]: Hero
+              - generic [ref=e142]: calls
+              - generic [ref=e143]: ₮0.04
+            - listitem [ref=e144]:
+              - generic [ref=e145]: 1f3a2c7d
+              - generic [ref=e146]: folds
+        - generic [ref=e147]:
+          - generic [ref=e148]:
+            - heading "flop" [level=3] [ref=e149]
+            - generic [ref=e150]:
+              - generic [ref=e151]: 8♠
+              - generic [ref=e152]: 9♣
+              - generic [ref=e153]: 9♦
+          - list [ref=e154]:
+            - listitem [ref=e155]:
+              - generic [ref=e156]: Hero
+              - generic [ref=e157]: checks
+            - listitem [ref=e158]:
+              - generic [ref=e159]: 635321fa
+              - generic [ref=e160]: checks
+        - generic [ref=e161]:
+          - generic [ref=e162]:
+            - heading "turn" [level=3] [ref=e163]
+            - generic [ref=e164]:
+              - generic [ref=e165]: 8♠
+              - generic [ref=e166]: 9♣
+              - generic [ref=e167]: 9♦
+              - generic [ref=e168]: Q♥
+          - list [ref=e169]:
+            - listitem [ref=e170]:
+              - generic [ref=e171]: Hero
+              - generic [ref=e172]: bets
+              - generic [ref=e173]: ₮0.06
+            - listitem [ref=e174]:
+              - generic [ref=e175]: 635321fa
+              - generic [ref=e176]: calls
+              - generic [ref=e177]: ₮0.06
+        - generic [ref=e178]:
+          - generic [ref=e179]:
+            - heading "river" [level=3] [ref=e180]
+            - generic [ref=e181]:
+              - generic [ref=e182]: 8♠
+              - generic [ref=e183]: 9♣
+              - generic [ref=e184]: 9♦
+              - generic [ref=e185]: Q♥
+              - generic [ref=e186]: A♥
+          - list [ref=e187]:
+            - listitem [ref=e188]:
+              - generic [ref=e189]: Hero
+              - generic [ref=e190]: checks
+            - listitem [ref=e191]:
+              - generic [ref=e192]: 635321fa
+              - generic [ref=e193]: bets
+              - generic [ref=e194]: ₮0.12
+            - listitem [ref=e195]:
+              - generic [ref=e196]: Hero
+              - generic [ref=e197]: raises to
+              - generic [ref=e198]: ₮0.60
+            - listitem [ref=e199]:
+              - generic [ref=e200]: 635321fa
+              - generic [ref=e201]: raises to
+              - generic [ref=e202]: ₮1.08
+            - listitem [ref=e203]:
+              - generic [ref=e204]: Hero
+              - generic [ref=e205]: all-in
+              - generic [ref=e206]: ₮0.16
+      - generic [ref=e207]:
+        - generic [ref=e208]: Summary
+        - generic [ref=e209]: Total pot ₮1.76 · rake ₮0.09
+        - generic [ref=e210]: Hero won ₮1.67
