@@ -1,0 +1,90 @@
+name: Resolve Vite branch once
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/resolve-vite-merge-once-20260920.yml]
+permissions:
+  contents: write
+jobs:
+  resolve:
+    if: github.repository == 'abrahamahn/gto-analyzer'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Merge reviewed manifest change, regenerate lockfile, and validate
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json, os, pathlib, subprocess
+          root = pathlib.Path(os.environ['RUNNER_TEMP'])
+          work = root / 'gto-vite-merge'
+          report_path = root / 'vite-merge-report'
+          report_path.mkdir()
+          report = {'repository': 'abrahamahn/gto-analyzer', 'pushed': False, 'checks': []}
+          clean_env = {k: v for k, v in os.environ.items() if k not in ('GH_TOKEN', 'GITHUB_TOKEN', 'GH_ENTERPRISE_TOKEN')}
+          clean_env['CI'] = 'true'
+          def run(args, check=True, clean=False, timeout=180):
+              p = subprocess.run(args, cwd=work if work.exists() else root, env=clean_env if clean else None,
+                  text=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, timeout=timeout)
+              print(p.stdout[-12000:], flush=True)
+              if check and p.returncode:
+                  raise RuntimeError(str(args) + ' failed: ' + p.stdout[-6000:])
+              return p
+          def git(*args, check=True):
+              return run(['git', *args], check=check)
+          try:
+              run(['gh', 'auth', 'setup-git'])
+              run(['git', 'clone', '--quiet', 'https://github.com/abrahamahn/gto-analyzer.git', str(work)])
+              git('checkout', 'main')
+              git('config', 'user.name', 'github-actions[bot]')
+              git('config', 'user.email', '41898282+github-actions[bot]@users.noreply.github.com')
+              branch = 'dependabot/npm_and_yarn/vite-6.4.3'
+              source = '01881cb302b7b435831da7c1f08e47cd285374c8'
+              live = git('ls-remote', 'origin', 'refs/heads/' + branch).stdout.split()
+              assert live and live[0] == source, 'Source changed; review required'
+              before = git('rev-parse', 'HEAD').stdout.strip()
+              base = git('merge-base', 'HEAD', source).stdout.strip()
+              assert set(git('diff', '--name-only', base, source).stdout.splitlines()) == {'apps/web/package.json', 'pnpm-lock.yaml'}
+              package = json.loads((work / 'apps/web/package.json').read_text())
+              assert package['devDependencies']['vite'] == '^6.0.7'
+              git('merge', '--no-ff', '--no-commit', source, check=False)
+              conflicts = set(git('diff', '--name-only', '--diff-filter=U').stdout.splitlines())
+              assert conflicts <= {'apps/web/package.json', 'pnpm-lock.yaml'}, conflicts
+              package['devDependencies']['vite'] = '^6.4.3'
+              (work / 'apps/web/package.json').write_text(json.dumps(package, indent=2) + '\n')
+              (work / 'pnpm-lock.yaml').write_text(git('show', 'HEAD:pnpm-lock.yaml').stdout)
+              run(['npm', 'install', '--global', 'pnpm@10.26.2', '--ignore-scripts'], clean=True)
+              run(['pnpm', 'install', '--no-frozen-lockfile', '--ignore-scripts'], clean=True, timeout=480)
+              git('add', 'apps/web/package.json', 'pnpm-lock.yaml')
+              git('diff', '--cached', '--check')
+              report['checks'].append('manifest and lockfile regenerated consistently')
+              run(['pnpm', '--filter', '@poker/web...', 'run', 'build'], clean=True, timeout=360)
+              report['checks'].append('web and workspace dependency builds passed')
+              run(['pnpm', '--filter', '@poker/web', 'exec', 'vitest', 'run', '--passWithNoTests'], clean=True, timeout=180)
+              report['checks'].append('web Vitest command passed (permits no tests)')
+              assert not git('diff', '--name-only', '--diff-filter=U').stdout.strip()
+              assert set(git('diff', '--cached', '--name-only').stdout.splitlines()) <= {'apps/web/package.json', 'pnpm-lock.yaml'}
+              git('commit', '-m', 'Merge Vite 6.4.3 update without reverting newer Vitest and PostCSS', '-m', 'Regenerate the lockfile from current main, preserving newer dependency work. Validate workspace/web builds and the web test command before publishing.')
+              prefix = 'branch-cleanup-20260920-' + os.environ['GITHUB_RUN_ID']
+              git('push', '--atomic', '--force-with-lease=refs/heads/' + branch + ':' + source,
+                  'origin', 'HEAD:refs/heads/main', source + ':refs/tags/' + prefix + '/' + branch,
+                  before + ':refs/tags/' + prefix + '/previous-main', ':refs/heads/' + branch)
+              report.update(pushed=True, previous_main=before, merged_main=git('rev-parse', 'HEAD').stdout.strip(), backup_tag_prefix=prefix)
+          except Exception as exc:
+              report['error'] = str(exc)[-8000:]
+          finally:
+              (report_path / 'report.json').write_text(json.dumps(report, indent=2))
+              with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as out:
+                  out.write('```json\n' + json.dumps(report, indent=2) + '\n```\n')
+              print(json.dumps(report, indent=2))
+          PY
+      - name: Save validation report
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: vite-merge-report
+          path: ${{ runner.temp }}/vite-merge-report/
+          retention-days: 1
